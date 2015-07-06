@@ -9,10 +9,11 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-
 set number
 syntax enable
 set background=dark
 let g:solarized_termcolors = 256
 colorscheme solarized
 filetype plugin indent on
+set runtimepath^=~/.vim/bundle/ctrlp.vim 
+set runtimepath^=~/.vim/bundle/ag
