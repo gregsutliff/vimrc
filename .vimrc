@@ -17,3 +17,13 @@ colorscheme solarized
 filetype plugin indent on
 set runtimepath^=~/.vim/bundle/ctrlp.vim 
 set runtimepath^=~/.vim/bundle/ag
+set relativenumber
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+noremap <C-n> :call NumberToggle()<cr>
