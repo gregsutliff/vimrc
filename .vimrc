@@ -10,6 +10,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rking/ag.vim'
+Plugin 'wikitopian/hardmode'
 call vundle#end()
 filetype plugin indent on "required for Vundle
 
@@ -17,8 +19,13 @@ filetype plugin indent on "required for Vundle
 filetype plugin on
 filetype indent on
 
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 " Set to auto read when a file is changed from the outside
 set autoread
+
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -30,6 +37,15 @@ nmap <leader>w :w!<cr>
 
 " Relative numbering
 set relativenumber
+
+"Disable mode display (for powerline)
+set noshowmode
+
+"Always show the statusline
+set laststatus=2
+
+"Always display the tabline
+set showtabline=2
 
 set number
 
