@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/Me/Desktop/workspace/sign_request/app/views'
+let g:netrw_dirhist_2='/Users/Me/Dropbox/Development/workspace/organizer2/spec/models'
+let g:netrw_dirhist_3='/Users/Me/Dropbox/Development/workspace/organizer2/spec'
+let g:netrw_dirhist_4='/Users/Me/Dropbox/Development/workspace/organizer2'
+let g:netrw_dirhist_5='/Users/Me/Dropbox/Development/workspace/organizer2/app'
+let g:netrw_dirhist_6='/Users/Me/Dropbox/Development/workspace/organizer2/app/models'
