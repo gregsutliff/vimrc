@@ -35,6 +35,8 @@ let mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+command WriteMode :noremap c <Nop> \| :inoremap <BS> <Nop> \| :noremap d <Nop>
+
 " Relative numbering
 set relativenumber
 
@@ -101,9 +103,10 @@ set wrap "Wrap lines
 "Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+
 map <C-n> :NERDTreeToggle<CR>
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = 'call Send_to_Tmux("bundle exec spring rspec {spec}\n")'
+let g:rspec_command = 'call Send_to_Tmux("bundle exec spring rspec {spec} -fd\n")'
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
